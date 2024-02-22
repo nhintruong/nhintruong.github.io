@@ -24,7 +24,7 @@ author:
   avatar           : "profile.png"
   # name             : "Your Sidebar Name"
   pronouns         : # example: "she/her"  
-  bio              : "Hi! My name is Nhi. I am studying informatics at VNU-HCM High School for the Gifted"
+  # bio              : "Hi! My name is Nhi. I am studying informatics at VNU-HCM High School for the Gifted"
   location         : "Ho Chi Minh City, Vietnam"
   employer         : "VNU-HCM High School for the Gifted"
   uri              : # URL
