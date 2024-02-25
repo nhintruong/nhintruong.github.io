@@ -1,11 +1,11 @@
 ---
-title: "URA RESEARCH GROUP"
+title: "VNPT LAB"
 collection: experience
-type: "Experience"
-permalink: /experience/internship
-venue: "VNPT Lab, Ho Chi Minh City University of Technology, Faculty of Computer Science and Engineering"
-date: 03/2023
-location: "Ho Chi Minh City, Vietnam"
+permalink: /experience/
+venue: "Ho Chi Minh City University of Technology, Faculty of Computer Science and Engineering"
+date: from 03/2023
+location: "Vietnam"
 ---
 
-This is a description of your talk, which is a markdown files that can be all markdown-ified like any other post. Yay markdown!
+With URA RESEARCH GROUP 
+During my internship at the VNPT Laboratory, I actively engaged in research within the domain of Artificial Intelligence.
