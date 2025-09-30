@@ -25,10 +25,10 @@ author:
   # name             : "Your Sidebar Name"
   pronouns         : # example: "she/her"  
   # bio              : "Hi! My name is Nhi. I am studying informatics at VNU-HCM High School for the Gifted"
-  location         : "Ho Chi Minh City, Vietnam"
-  employer         : "VNU-HCM High School for the Gifted"
+  location         : "Greencastle, Indiana"
+  employer         : "DePauw University"
   uri              : # URL
-  email            : "nntruong2601@gmail.com" 
+  email            : "nhitruong_2029@depauw.edu"
 
   # Academic websites
   # arxiv            : # URL - Update with the correct link to your profile
@@ -46,9 +46,9 @@ author:
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
-  # Social media
-  facebook         : "nntruong2601" # Username
-  Instagram        : "nntruong2601"# Username
+  # # Social media
+  # facebook         : "nntruong2601" # Username
+  # Instagram        : "nntruong2601"# Username
   # linkedin         : # Username
   # telegram         : # URL
   # tumblr           : # Username
