@@ -21,10 +21,10 @@ repository               : "academicpages/academicpages.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "profile picture.JPG"
   # name             : "Your Sidebar Name"
-  pronouns         : # example: "she/her"  
-  # bio              : "Hi! My name is Nhi. I am studying informatics at VNU-HCM High School for the Gifted"
+  # pronouns         : # example: "she/her"  
+  bio              : "CS & Economics @ DePauw University | Management Fellow & Science Research Fellow"
   location         : "Greencastle, Indiana"
   employer         : "DePauw University"
   uri              : # URL
