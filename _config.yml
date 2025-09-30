@@ -29,6 +29,7 @@ author:
   employer         : "DePauw University"
   uri              : # URL
   email            : "nhitruong_2029@depauw.edu"
+  cv               : "nhintruong_cv.pdf"
 
   # Academic websites
   # arxiv            : # URL - Update with the correct link to your profile
@@ -49,7 +50,7 @@ author:
   # # Social media
   # facebook         : "nntruong2601" # Username
   # Instagram        : "nntruong2601"# Username
-  # linkedin         : # Username
+  linkedin           : "nhintruong"
   # telegram         : # URL
   # tumblr           : # Username
   # twitter          : "UniofOxford"  # Replace this with your X / Twitter handle
