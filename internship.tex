@@ -1,0 +1,223 @@
+%-------------------------
+% Resume in Latex
+% Author : Gennadii Chursov
+% Based off of: https://github.com/sb2nov/resume and https://www.overleaf.com/latex/templates/jakes-qresume/syzfjbzwjncs
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+\usepackage{fontawesome5}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+\begin{center}
+    {\huge \scshape Nhi N. Truong} \\ \vspace{1pt}
+    % Seeking internships from May 2026 through August 2026 \\ 
+    \faIcon{phone} +1 (650) 468-5460
+    \faIcon{envelope} \href{mailto:nhitruong_2029@depauw.edu}{\underline{nhitruong\_2029@depauw.edu}} \hspace{0cm}
+    \faIcon{globe} \href{https://nhintruong.github.io//}{{\underline{nhintruong.github.io}}} \hspace{0cm} 
+    \faIcon{linkedin} \href{https://www.linkedin.com/in/nhintruong}{{\underline{linkedin.com/in/nhintruong}}}
+    % \faIcon{github} \href{https://github.com/nhintruong}{{\underline{github.com/nhintruong}}}
+\end{center}
+
+% I apply my engineering background to address problems in education and healthcare using data-driven technology, such as large language models and time-series forecasting.
+
+\section{Education}
+
+  \resumeSubHeadingListStart
+    \resumeSubheading
+    {DePauw University}{\textbf{United States}}{Bachelor of Arts in Computer Science and Economics $|$ 4.0/4.0 GPA}{May 2029}
+    \resumeItemListStart
+        \resumeItem{Relevant Coursework: Software Development, Data Structures, Discrete Math, Calculus II, Calculus III}
+        \resumeItem{Affiliation: Management Fellows Program (Business Honors), Science Research Fellow Program, Information Technology Associate Program (ITAP), Honor Scholar}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\section{Technical Skills}
+\begin{tabular}{@{}p{4cm}p{14cm}@{}}
+\textbf{Programming} & Python, R, C++, Java \\
+\textbf{Machine Learning} & Large Language Models, Time-Series Forecasting, Model Evaluation, NLP \\
+\textbf{Data Analysis} & Statistical Computing, Quantitative Research, Data Visualization \\
+\textbf{Tools} & Git, GitHub, animint2, webshot2, LaTeX, Google Suite, Microsoft Office \\
+\end{tabular}
+
+ 
+\section{Work Experience}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Stanford Trustworthy Artificial Intelligence Research Lab}{\textbf{United States}}
+{Machine Learning Research Engineer (Advisor: Professor Sanmi Koyejo)}{June 2023 - present}
+\resumeItemListStart
+    % \resumeItem{(fix here)!!!! Proposed hybrid AI benchmark framework with private content and public design to balance evaluation integrity and stakeholder trust; paper is reviewed at NeurIPS 2025.}
+    \resumeItem{Architected novel \textbf{AI evaluation framework} combining public benchmark design with private test content to prevent data contamination and improve stakeholder trust, achieving 40\% reduction in benchmark gaming compared to traditional approaches}
+    \resumeItem{Built comprehensive evaluation framework with 10 \textbf{NLP} tasks (translation, summarization, Q\&A, sentiment analysis) and 31 automated metrics, processing 50,000+ test samples to benchmark model performance, bias detection, and calibration accuracy}
+    \resumeItem{Published paper as co-first author at \textit{NAACL’24}, a top-tier international conference in Artificial Intelligence: {\bf Truong} et al. \href{https://aclanthology.org/2024.findings-naacl.182/}{\sl \underline{Crossing Linguistic Horizons: Finetuning and Comprehensive Evaluation of Vietnamese Large Language Models}}. \\ \textit{Media cover}: \href{https://www.nytimes.com/2024/07/26/technology/ai-language-gap.html}{\underline{The New York Times}}, \href{https://hai.stanford.edu/news/improving-equity-and-access-non-english-large-language-models}{\underline{Stanford Human-centered AI}}, \href{https://ai.stanford.edu/blog/crossing-linguistic-horizon/}{\underline{Stanford AI Lab Blog Post}}}
+\resumeItemListEnd
+
+\resumeSubheading
+{VNU-HCMUT Artificial Intelligence Lab}{\textbf{Vietnam}}
+{Machine Learning Research Engineer (Advisor: Professor Tho Quan)}{March 2023 - May 2025}
+\resumeItemListStart
+    \resumeItem{Optimized \textbf{deep learning} pipeline for \textbf{time-series prediction} architecture by combining \textbf{Transformer neural networks} with \textbf{Holt-Winters statistical methods}, reducing prediction error by 15\% and improving training efficiency by 60\% on complex seasonal datasets compared to state-of-the-art models}
+    \resumeItem{Led technical development as first author, translating forecasting requirements into 20+ technical specifications, managing 9-month development cycle from problem analysis to publication at \textit{Time Series for Health} workshop of \textit{ICLR 2024}: {\bf Truong} et al. \href{https://iclr.cc/virtual/2024/23571}{\sl \underline{Hybrid Transformer and Holt-Winter's Method for Time Series Forecasting}}}
+\resumeItemListEnd
+\resumeSubheading
+{Google Summer of Code: The R Project for Statistical Computing}{\textbf{United States}}
+{Software Engineering Contributor}{June 2024 - August 2024}
+\resumeItemListStart
+    \resumeItem{Migrated \textbf{\texttt{animint2} R package} from PhantomJS to \textbf{Chrome}, refactoring visualization pipeline in \textbf{R} to enable headless browser testing and automated screenshot capture.}
+    \resumeItem{Implemented automated testing with \textbf{testthat} across Windows, Ubuntu, and macOS environments to achieve compatibility and prevent regression bugs in interactive data visualization rendering}
+    \resumeItem{Developed new features including \textbf{HTML} table layout system for multi-plot arrangements, automated screenshot export using \textbf{webshot2}, and ported 50+ interactive visualizations to GitHub Pages gallery with expanded documentation.}
+    
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Intelligence Conversational System for Education}{\textbf{Vietnam}}
+{Team Leader \& Lead Technical Writer}{July 2023 - October 2023}
+\resumeItemListStart
+    \resumeItem{Built \textbf{NLP-powered chatbot} using \textbf{Python} with automated Q\&A on schedules, tuition, and school policies.}
+    \resumeItem{Integrated chatbot with Facebook Messenger to maximize user accessibility and platform reach.}
+    \resumeItem{Reduced search time by 70\% by consolidating multiple school communication channels into single AI interface.}
+    % \resumeItem{Top 20, Samsung's Solve for Tomorrow Competition}
+    %     \item[{[1]}] {\bf Truong}, Huynh, Nguyen, Quan. (2023). {\sl Intelligence Conversational System for Education.}
+    % \end{itemize}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+% Interests: Percussion, Running
+
+
+
+
+% \item[{[1]}] {\bf Truong}, Huynh, Nguyen, Quan. (2023). {\sl Intelligence Conversational System for Education.}
+% \end{itemize}
+
+% \\ \emph{Description}: Realizing the overwhelming amount of information across school media channels at the VNU-HCM High School for the Gifted, I built a messenger chatbot specifically for this school environment using Deep Learning and Natural Language Processing. My goal is to help reduce the burden on the counseling team and save time searching for information. 
+
+% {{\bf Nhi Ngoc Truong}, Dat Minh Huynh, Duc Quang Nguyen, Tho Quan. {\sl Smart Chatbot for the educational environment}}
+% \\ Realizing the overwhelming amount of information across school media channels at the VNU-HCM High School for the Gifted, I built a messenger chatbot specifically for this school environment using Deep Learning and Natural Language Processing. My goal is to help reduce the burden on the counseling team and save time searching for information. 
+
+ % \section{OBJECTIVE}  
+% Hi! My name is Nhi. I am an Informatics specialized student at VNU-HCM High School for the Gifted. My research interests include machine learning, time series forecasting, and large language models. I am enthusiastic about utilizing these techniques to advance medicine and scientific discovery. 
+% Greetings, I am Nhi, a high school student at VNU-HCM High School for the Gifted, and my major is Computer Science. \sang{This sentence is redundant because you mentioned this below in your education section}. 
+% I apply my engineering background to address problems in education and healthcare using data-driven technology, such as large language models and time-series forecasting.
+
+% % \section{Awards}
+% % \begin{itemize}[leftmargin = 0.25in, itemsep=0.5pt]
+% %     \item[{[9]}] Traveling Award, VIASM Summer School in Mathematical Physics, Vietnam \hfill \emph{06/24}    
+% %     \item[{[8]}] Traveling Award, IEEE RAS Summer School on Educational Robotics, Austria \hfill \emph{05/24} 
+% %     \item[{[7]}] Top 1\% Finalist, Non-trivial Fellowship \hfill 04/24\vspace{-2pt}
+% %     \item[{[6]}] 2nd Prize, Vietnam Regional Science and Engineering Fair \hfill 11/23\vspace{-2pt}
+% %     \item[{[5]}] 2nd Prize, The Bach Khoa Innovation, VNU-HCMUT. Project: Book Exchange Machine \hfill 06/23\vspace{-2pt}
+% %     \item[{[4]}] Top 20, Samsung's Solve for Tomorrow Challenge. Project: BeU: Smart Chatbot for Education \hfill {10/23}\vspace{-2pt}
+% %     \item[{[3]}] Finalist, Female Developer Innovation Competition, Code Like A Girl \hfill {10/23}\vspace{-2pt}
+% %     \item[{[2]}] 1st and 4th Prizes in Mathematics, Vietnam Regional Olympiad \hfill \emph{03/21, 04/22}\vspace{-2pt}
+% %     \item[{[1]}] 1st Place Award - American Mathematics Competition \hfill \emph{21} \\
+% % \end{itemize}
+
+% % \section{Leadership}
+% % \begin{itemize}[leftmargin = 0.25in, itemsep=0.5pt]
+% %     % Summer School Organizer, Fund-raise, recruit, planning
+
+% %     \item[{[5]}] {La Thu Project} -- \emph{Logistic Department} \hfill \emph{08/24 - Present}
+    
+% %     \item[{[4]}] {Route to Knowledge} -- \emph{Tutor Department and Event Department} \hfill \emph{07/22 - Present}
+% %     % \item[{[4]}] {Workshop TU(A) - Route to Knowledge} --\emph{Event Team} \hfill \emph{11/22 - 04/23}
+    
+% %     \item[{[3]}] {The Gifted Battlefield} -- \emph{Vice President of Program Department} \hfill {\it 06/23 - 08/24}
+    
+% %     \item[{[2]}] {Den Project} -- \emph{President of Human Resources Department}\hfill {\it 06/23 - 12/23}
+
+% %     \item[{[1]}] {The Hackathinker} -- \emph{President of External Relations and Public Relations Department} \hfill {\it 05/23 - Present}
+
+% \end{itemize}
+\end{document}
