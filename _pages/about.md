@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: CS & Economics @ <a href='https://www.depauw.edu/'>DePauw University</a> | ML Researcher @ <a href='https://ai.stanford.edu/'>Stanford AI Lab</a>
 
@@ -26,10 +26,8 @@ latest_posts:
   limit: 3
 ---
 
-Hi! I'm Nhi, a Computer Science and Economics student at DePauw University (4.0 GPA), where I'm part of the Management Fellows Program, Science Research Fellow Program, and Honor Scholar Program.
+Hi! I'm Nhi, a Computer Science and Economics student at [DePauw University](https://www.depauw.edu/).
 
-I work as a Machine Learning Research Engineer at the [Stanford Trustworthy AI Research Lab](https://ai.stanford.edu/) under Professor [Sanmi Koyejo](https://cs.stanford.edu/~sanmi/), where I focus on building evaluation frameworks for large language models. My research on Vietnamese LLMs was published at **NAACL 2024** and featured in [The New York Times](https://www.nytimes.com/2024/07/26/technology/ai-language-gap.html) and [Stanford HAI](https://hai.stanford.edu/news/improving-equity-and-access-non-english-large-language-models).
+I currently work with Professor [Sanmi Koyejo](https://cs.stanford.edu/~sanmi/) at the [Stanford Trustworthy AI Research Lab](https://ai.stanford.edu/), where I help build evaluation frameworks for large language models. Previously, I worked on time series forecasting at the [VNU-HCMUT AI Lab](https://www.hcmut.edu.vn/en) and contributed to [The R Project](https://www.r-project.org/) through Google Summer of Code.
 
-I also contributed to time series forecasting research at the [VNU-HCMUT AI Lab](https://www.hcmut.edu.vn/en), published at **ICLR 2024**, and was a Google Summer of Code contributor for [The R Project](https://www.r-project.org/).
-
-My research interests span **machine learning**, **natural language processing**, and **time series forecasting**, with applications in healthcare and education. I'm enthusiastic about using data-driven technology to advance scientific discovery.
+I'm interested in **machine learning**, **natural language processing**, and **time series forecasting**, especially their applications in healthcare and education.
