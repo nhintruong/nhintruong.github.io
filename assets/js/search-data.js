@@ -18,7 +18,7 @@ ninja.data = [{
           },
         },{id: "nav-projects",
           title: "Projects",
-          description: "Research and software projects.",
+          description: "Software projects and applications.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
@@ -39,17 +39,7 @@ ninja.data = [{
           section: "News",},{id: "news-selected-as-a-google-summer-of-code-2024-contributor-for-the-r-project-for-statistical-computing-working-on-the-animint2-package",
           title: 'Selected as a Google Summer of Code 2024 contributor for The R Project...',
           description: "",
-          section: "News",},{id: "projects-vietnamese-llm-evaluation",
-          title: 'Vietnamese LLM Evaluation',
-          description: "Finetuning and comprehensive evaluation of Vietnamese large language models at Stanford AI Lab.",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/1_vietnamese_llm/";
-            },},{id: "projects-estransformer",
-          title: 'ESTransformer',
-          description: "Hybrid Transformer and Holt-Winter&#39;s method for time series forecasting.",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/2_time_series/";
-            },},{id: "projects-animint2-gsoc",
+          section: "News",},{id: "projects-animint2-gsoc",
           title: 'animint2 (GSoC)',
           description: "Migrating the animint2 R package from PhantomJS to Chrome for Google Summer of Code.",
           section: "Projects",handler: () => {
