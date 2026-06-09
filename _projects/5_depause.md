@@ -10,6 +10,8 @@ selected: true
 
 **DePause** ("Feel the campus pause") is a mobile app built for DePauw University that reframes mental health as something collective rather than individual. I built it with Leo Tang over the 14-day **TigerHacks 2026** hackathon, hosted by Women in Computer Science (WiCS) in collaboration with the Tenzer Technology Center, where it won **2nd place overall**.
 
+<a href="https://github.com/nhintruong/DePause-TigerHacks" target="_blank" rel="noopener noreferrer" class="btn btn-sm z-depth-0" role="button">Code</a>
+
 **The problem:** 57% of college students feel lonely, and 40% of those who need help don't get it, most often because they don't think they need it. The gap isn't a lack of resources. It's connection.
 
 <div class="row justify-content-sm-center align-items-center">
