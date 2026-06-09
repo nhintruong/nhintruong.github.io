@@ -51,7 +51,7 @@ ninja.data = [{
               window.location.href = "/projects/4_educational_chatbot/";
             },},{id: "projects-depause",
           title: 'DePause',
-          description: "A campus mental health app that turns 5-second mood check-ins into a live, anonymous map of how the campus feels — 2nd place at TigerHacks 2026.",
+          description: "A campus mental health app that turns 5-second mood check-ins into a live, anonymous map of how the campus feels. Won 2nd place at TigerHacks 2026.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/5_depause/";
             },},{
