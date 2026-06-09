@@ -1,0 +1,98 @@
+cv:
+  name: Nhi N. Truong
+  label: ML Researcher & CS Student
+  email: nntruong@cs.stanford.edu
+  location: Greencastle, Indiana
+  image: ""
+
+  social_networks:
+    - network: GitHub
+      username: nhintruong
+    - network: LinkedIn
+      username: nhintruong
+
+  sections:
+    Education:
+      - institution: DePauw University
+        location: Greencastle, Indiana, United States
+        url: https://www.depauw.edu/
+        area: Computer Science and Economics
+        studyType: Bachelor of Arts
+        start_date: 2025
+        end_date: 2029
+        score: "4.0/4.0 GPA"
+        highlights:
+          - "Relevant Coursework: Software Development, Data Structures, Discrete Math, Calculus II, Calculus III"
+          - "Affiliations: [Management Fellows Program (Business Honors)](https://www.depauw.edu/academics/honors-fellows-programs/management-fellows/), [Science Research Fellows Program](https://www.depauw.edu/academics/honors-fellows-programs/science-research-fellows/), [Information Technology Associates Program (ITAP)](https://www.depauw.edu/it/itap/), [Honor Scholar Program](https://www.depauw.edu/academics/honors-fellows-programs/honor-scholar-program/)"
+
+    Honors and Awards:
+      - date: 2026-04-08
+        title: "2nd Place Overall — TigerHacks 2026"
+        awarder: "Women in Computer Science (WiCS) & Tenzer Technology Center, DePauw University"
+        summary: "Awarded for **DePause**, a campus mental health app, at a 14-day hackathon (built as a two-person team)."
+
+    Experience:
+      - company: Stanford Trustworthy Artificial Intelligence Research Lab
+        position: Machine Learning Research Engineer
+        location: Stanford, California, United States
+        url: https://ai.stanford.edu/
+        start_date: 2023-06-01
+        end_date: present
+        summary: "Advisor: Professor Sanmi Koyejo"
+        highlights:
+          - "Architected novel AI evaluation framework combining public benchmark design with private test content to prevent data contamination and improve stakeholder trust, achieving 40% reduction in benchmark gaming compared to traditional approaches"
+          - "Built comprehensive evaluation framework with 10 NLP tasks (translation, summarization, Q&A, sentiment analysis) and 31 automated metrics, processing 50,000+ test samples to benchmark model performance, bias detection, and calibration accuracy"
+          - "Published paper as co-first author at NAACL 2024, featured in The New York Times and Stanford HAI"
+
+      - company: VNU-HCMUT Artificial Intelligence Lab
+        position: Machine Learning Research Engineer
+        location: Ho Chi Minh City, Vietnam
+        url: https://www.hcmut.edu.vn/en
+        start_date: 2023-03-01
+        end_date: 2025-05-01
+        summary: "Advisor: Professor Tho Quan"
+        highlights:
+          - "Optimized deep learning pipeline for time series prediction architecture by combining Transformer neural networks with Holt-Winters statistical methods, reducing prediction error by 15% and improving training efficiency by 60%"
+          - "Led technical development as first author, managing 9-month development cycle from problem analysis to publication at ICLR 2024 Time Series for Health workshop"
+
+      - company: Google Summer of Code (The R Project for Statistical Computing)
+        position: Software Engineering Contributor
+        location: United States
+        start_date: 2024-06-01
+        end_date: 2024-08-01
+        highlights:
+          - "Migrated animint2 R package from PhantomJS to Chrome, refactoring visualization pipeline to enable headless browser testing and automated screenshot capture"
+          - "Implemented automated testing with testthat across Windows, Ubuntu, and macOS environments"
+          - "Developed HTML table layout system for multi-plot arrangements, automated screenshot export using webshot2, and ported 50+ interactive visualizations to GitHub Pages gallery"
+
+    Projects:
+      - name: "DePause — Campus Mental Health App"
+        summary: "Built a mobile app (React Native, TypeScript, Supabase) that turns 5-second mood check-ins into a live, anonymous campus mood heatmap with evidence-based suggestions and on-device crisis detection."
+        highlights:
+          - "Won 2nd Place Overall at TigerHacks 2026, a 14-day hackathon (two-person team)"
+        start_date: 2026-03-17
+        end_date: 2026-04-08
+
+      - name: Intelligence Conversational System for Education
+        summary: "Built NLP-powered chatbot using Python with automated Q&A on schedules, tuition, and school policies. Integrated with Facebook Messenger and reduced search time by 70%."
+        highlights:
+          - "Team Leader & Lead Technical Writer"
+        start_date: 2023-07-01
+        end_date: 2023-10-01
+
+    Skills:
+      - name: Programming
+        level: ""
+        keywords: "Python, R, C++, Java"
+
+      - name: Machine Learning
+        level: ""
+        keywords: "Large Language Models, Time Series Forecasting, Model Evaluation, NLP"
+
+      - name: Data Analysis
+        level: ""
+        keywords: "Statistical Computing, Quantitative Research, Data Visualization"
+
+      - name: Tools
+        level: ""
+        keywords: "Git, GitHub, animint2, webshot2, LaTeX, Google Suite, Microsoft Office"

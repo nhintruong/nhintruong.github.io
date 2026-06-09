@@ -1,0 +1,158 @@
+<canvas id="nlp-bg-canvas" aria-hidden="true"></canvas>
+<script>
+  (function () {
+    const canvas = document.getElementById('nlp-bg-canvas');
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+    const dpr = Math.min(window.devicePixelRatio || 1, 2);
+
+    // Graph parameters. Nodes drift slowly across the viewport; an edge
+    // is drawn between any two nodes within EDGE_MAX pixels, so the
+    // network reshapes itself as nodes move. The cursor pushes nearby
+    // nodes away gently and lights up their edges in the accent color.
+    const NODE_TARGET = 38;
+    const EDGE_MAX = 160;
+    const HOVER_RADIUS = 150;
+    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    let nodes = [];
+    let mouse = { x: -9999, y: -9999, active: false };
+    let colors = readColors();
+
+    function readColors() {
+      const cs = getComputedStyle(document.documentElement);
+      return {
+        node: cs.getPropertyValue('--nlp-node-color').trim() || 'rgba(60,60,60,0.55)',
+        edge: cs.getPropertyValue('--nlp-edge-color').trim() || 'rgba(60,60,60,0.18)',
+        hover: cs.getPropertyValue('--global-theme-color').trim() || '#e2553d',
+      };
+    }
+
+    function resize() {
+      const w = window.innerWidth;
+      const h = window.innerHeight;
+      canvas.width = w * dpr;
+      canvas.height = h * dpr;
+      canvas.style.width = w + 'px';
+      canvas.style.height = h + 'px';
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    }
+
+    function init() {
+      resize();
+      const w = window.innerWidth;
+      const h = window.innerHeight;
+      // Scale node count gently with viewport area, but cap it.
+      const count = Math.min(NODE_TARGET, Math.max(18, Math.floor((w * h) / 28000)));
+      nodes = [];
+      for (let i = 0; i < count; i++) {
+        nodes.push({
+          x: Math.random() * w,
+          y: Math.random() * h,
+          vx: (Math.random() - 0.5) * 0.18,
+          vy: (Math.random() - 0.5) * 0.18,
+          r: 1.8 + Math.random() * 1.8,
+          hover: 0,
+        });
+      }
+    }
+
+    function tick() {
+      const w = window.innerWidth;
+      const h = window.innerHeight;
+      ctx.clearRect(0, 0, w, h);
+
+      // Update node positions and hover state.
+      for (const n of nodes) {
+        if (!reduced) {
+          n.x += n.vx;
+          n.y += n.vy;
+          if (n.x < -10) n.x = w + 10;
+          if (n.x > w + 10) n.x = -10;
+          if (n.y < -10) n.y = h + 10;
+          if (n.y > h + 10) n.y = -10;
+        }
+        let target = 0;
+        if (mouse.active) {
+          const dx = n.x - mouse.x;
+          const dy = n.y - mouse.y;
+          const d = Math.hypot(dx, dy) || 1;
+          if (d < HOVER_RADIUS) {
+            target = 1 - d / HOVER_RADIUS;
+            // Soft repel so the graph parts around the cursor.
+            const push = Math.min(0.9, target * 0.7);
+            n.x += (dx / d) * push;
+            n.y += (dy / d) * push;
+          }
+        }
+        n.hover += (target - n.hover) * 0.18;
+      }
+
+      // Edges: draw between any pair of nodes within EDGE_MAX.
+      ctx.lineWidth = 1;
+      for (let i = 0; i < nodes.length; i++) {
+        for (let j = i + 1; j < nodes.length; j++) {
+          const a = nodes[i];
+          const b = nodes[j];
+          const dx = a.x - b.x;
+          const dy = a.y - b.y;
+          const d = Math.hypot(dx, dy);
+          if (d < EDGE_MAX) {
+            const fade = 1 - d / EDGE_MAX;
+            const hoverFactor = Math.max(a.hover, b.hover);
+            if (hoverFactor > 0.05) {
+              ctx.strokeStyle = colors.hover;
+              ctx.globalAlpha = fade * (0.25 + 0.65 * hoverFactor);
+            } else {
+              ctx.strokeStyle = colors.edge;
+              ctx.globalAlpha = fade;
+            }
+            ctx.beginPath();
+            ctx.moveTo(a.x, a.y);
+            ctx.lineTo(b.x, b.y);
+            ctx.stroke();
+          }
+        }
+      }
+
+      // Nodes on top of edges.
+      for (const n of nodes) {
+        ctx.fillStyle = n.hover > 0.05 ? colors.hover : colors.node;
+        ctx.globalAlpha = 0.55 + 0.45 * n.hover;
+        const r = n.r * (1 + 1.0 * n.hover);
+        ctx.beginPath();
+        ctx.arc(n.x, n.y, r, 0, Math.PI * 2);
+        ctx.fill();
+      }
+
+      ctx.globalAlpha = 1;
+      requestAnimationFrame(tick);
+    }
+
+    window.addEventListener('resize', () => {
+      resize();
+      init();
+    });
+    window.addEventListener('pointermove', (e) => {
+      mouse.x = e.clientX;
+      mouse.y = e.clientY;
+      mouse.active = true;
+    });
+    document.addEventListener('mouseleave', () => {
+      mouse.active = false;
+    });
+    window.addEventListener('pointerleave', () => {
+      mouse.active = false;
+    });
+
+    // Re-read theme colors when al-folio toggles light/dark mode.
+    const obs = new MutationObserver(() => {
+      colors = readColors();
+    });
+    obs.observe(document.documentElement, { attributes: true });
+    obs.observe(document.body, { attributes: true, attributeFilter: ['class'] });
+
+    init();
+    requestAnimationFrame(tick);
+  })();
+</script>
