@@ -43,12 +43,20 @@ layout: default
 
     <div class="clearfix">{{ content }}</div>
 
-    <!-- Selected projects -->
+    <!-- Publications -->
+    {% if page.selected_papers %}
+      <h2>
+        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">Publications</a>
+      </h2>
+      {% include selected_papers.liquid %}
+    {% endif %}
+
+    <!-- Projects -->
     {% if page.selected_projects %}
       {% assign selected_projects = site.projects | where: 'selected', true | sort: 'importance' %}
       {% if selected_projects.size > 0 %}
         <h2>
-          <a href="{{ '/projects/' | relative_url }}" style="color: inherit">Selected Projects</a>
+          <a href="{{ '/projects/' | relative_url }}" style="color: inherit">Projects</a>
         </h2>
         <div class="projects">
           <div class="row row-cols-1 row-cols-md-3">
@@ -66,14 +74,6 @@ layout: default
         <a href="{{ '/blog/' | relative_url }}" style="color: inherit">Latest Posts</a>
       </h2>
       {% include latest_posts.liquid %}
-    {% endif %}
-
-    <!-- Selected papers -->
-    {% if page.selected_papers %}
-      <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">Publications</a>
-      </h2>
-      {% include selected_papers.liquid %}
     {% endif %}
 
     <!-- News -->
