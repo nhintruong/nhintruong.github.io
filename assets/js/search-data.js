@@ -23,12 +23,12 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/projects/";
           },
-        },{id: "nav-cv",
-          title: "CV",
-          description: "My academic and professional experience.",
+        },{id: "nav-resume",
+          title: "Resume",
+          description: "",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/cv/";
+            window.location.href = "/resume/";
           },
         },{id: "news-our-paper-hybrid-transformer-and-holt-winter-s-method-for-time-series-forecasting-was-accepted-at-the-time-series-for-health-workshop-at-iclr-2024",
           title: 'Our paper “Hybrid Transformer and Holt-Winter’s Method for Time Series Forecasting” was accepted...',
@@ -59,7 +59,7 @@ ninja.data = [{
         title: 'CV',
         section: 'Socials',
         handler: () => {
-          window.open("/assets/pdf/nhintruong_cv.pdf", "_blank");
+          window.open("/assets/pdf/nhintruong_resume.pdf", "_blank");
         },
       },{
         id: 'social-email',
