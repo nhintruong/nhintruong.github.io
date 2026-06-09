@@ -1,16 +1,16 @@
 ---
 layout: page
 title: DePause
-description: A campus mental health app that turns 5-second mood check-ins into a live, anonymous map of how the campus feels — 2nd place at TigerHacks 2026.
+description: A campus mental health app that turns 5-second mood check-ins into a live, anonymous map of how the campus feels. Won 2nd place at TigerHacks 2026.
 img: assets/img/depause_logo.png
 importance: 1
 category: software
 selected: true
 ---
 
-**DePause** ("Feel the campus pause") is a mobile app built for DePauw University that reframes mental health as something collective rather than individual. I built it with Leo Tang over the 14-day **TigerHacks 2026** hackathon — hosted by Women in Computer Science (WiCS) in collaboration with the Tenzer Technology Center — where it won **2nd place overall**.
+**DePause** ("Feel the campus pause") is a mobile app built for DePauw University that reframes mental health as something collective rather than individual. I built it with Leo Tang over the 14-day **TigerHacks 2026** hackathon, hosted by Women in Computer Science (WiCS) in collaboration with the Tenzer Technology Center, where it won **2nd place overall**.
 
-**The problem:** 57% of college students feel lonely, and 40% of those who need help don't get it — most often because they don't think they need it. The gap isn't a lack of resources; it's connection.
+**The problem:** 57% of college students feel lonely, and 40% of those who need help don't get it, most often because they don't think they need it. The gap isn't a lack of resources. It's connection.
 
 <div class="row justify-content-sm-center align-items-center">
     <div class="col-sm-4 mt-3 mt-md-0">
@@ -29,10 +29,10 @@ selected: true
 
 **What DePause does:**
 
-- **5-second check-in** — Tap one of four mood quadrants (Stressed, Good, Calm, Low). No journaling required; cat memes optional.
-- **Campus mood heatmap** — Anonymous check-ins power a live map of how each of 21 DePauw buildings feels in real time.
-- **Evidence-based suggestions** — A rules engine matches mood, context, and time to 2–3 personalized suggestions drawn from 80+ recommendations grounded in clinical meta-analyses, plus 100+ live campus events auto-refreshed from CampusLabs.
-- **On-device crisis detection** — A 3-tier system reads local journaling patterns entirely on-device and gently surfaces help — 988, Crisis Text Line, and DePauw Counseling — when patterns indicate need.
+- **5-second check-in:** Tap one of four mood quadrants (Stressed, Good, Calm, Low). No journaling required, and cat memes are optional.
+- **Campus mood heatmap:** Anonymous check-ins power a live map of how each of 21 DePauw buildings feels in real time.
+- **Evidence-based suggestions:** A rules engine matches mood, context, and time to 2 to 3 personalized suggestions drawn from 80+ recommendations grounded in clinical meta-analyses, plus 100+ live campus events auto-refreshed from CampusLabs.
+- **On-device crisis detection:** A 3-tier system reads local journaling patterns entirely on-device and gently surfaces help (988, Crisis Text Line, and DePauw Counseling) when patterns indicate need.
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-10 mt-3 mt-md-0">
@@ -43,6 +43,6 @@ selected: true
     The campus mood map: anonymous check-ins aggregated to building level across DePauw.
 </div>
 
-**Privacy by design:** Check-ins are anonymous by architecture, not just policy — a mood cannot be linked to a person. Building-level data only appears once 10+ students have checked in, and crisis detection never leaves the device without explicit consent.
+**Privacy by design:** Check-ins are anonymous by architecture, not just policy. A mood cannot be linked to a person. Building-level data only appears once 10+ students have checked in, and crisis detection never leaves the device without explicit consent.
 
 **Built with:** React Native (Expo), TypeScript, and Supabase (Postgres + Auth + Row-Level Security).

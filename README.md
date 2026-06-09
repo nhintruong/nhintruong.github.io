@@ -2,7 +2,7 @@
 
 Source for my personal academic website, **[nhintruong.github.io](https://nhintruong.github.io)**.
 
-I'm Nhi N. Truong — a CS & Economics student at DePauw University and a machine learning researcher at Stanford. The site collects my bio, CV, publications, and projects.
+I'm Nhi N. Truong, a CS & Economics student at DePauw University and a machine learning researcher at Stanford. The site collects my bio, CV, publications, and projects.
 
 ## Local development
 

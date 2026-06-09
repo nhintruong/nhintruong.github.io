@@ -27,7 +27,7 @@ cv:
 
     Honors and Awards:
       - date: 2026-04-08
-        title: "2nd Place Overall — TigerHacks 2026"
+        title: "2nd Place Overall at TigerHacks 2026"
         awarder: "Women in Computer Science (WiCS) & Tenzer Technology Center, DePauw University"
         summary: "Awarded for **DePause**, a campus mental health app, at a 14-day hackathon (built as a two-person team)."
 
@@ -66,7 +66,7 @@ cv:
           - "Developed HTML table layout system for multi-plot arrangements, automated screenshot export using webshot2, and ported 50+ interactive visualizations to GitHub Pages gallery"
 
     Projects:
-      - name: "DePause — Campus Mental Health App"
+      - name: "DePause: Campus Mental Health App"
         summary: "Built a mobile app (React Native, TypeScript, Supabase) that turns 5-second mood check-ins into a live, anonymous campus mood heatmap with evidence-based suggestions and on-device crisis detection."
         highlights:
           - "Won 2nd Place Overall at TigerHacks 2026, a 14-day hackathon (two-person team)"
