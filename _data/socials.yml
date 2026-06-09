@@ -1,7 +1,7 @@
 # this file contains the social media links and usernames of the author
 # the socials will be displayed in the order they are defined here
 # for more information, please refer to the documentation of jekyll-socials plugin: https://github.com/george-gca/jekyll-socials
-cv_pdf: /assets/pdf/nhintruong_cv.pdf
+cv_pdf: /assets/pdf/nhintruong_resume.pdf
 email: nntruong@cs.stanford.edu
 github_username: nhintruong
 linkedin_username: nhintruong
