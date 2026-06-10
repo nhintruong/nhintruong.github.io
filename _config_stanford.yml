@@ -1,0 +1,10 @@
+# Overlay config for the ai.stanford.edu/~nntruong/ build ONLY.
+# It overrides url/baseurl so asset and link paths resolve under the /~nntruong/
+# subpath. It is layered on top of the normal _config.yml at build time:
+#
+#   bundle exec jekyll build --config _config.yml,_config_stanford.yml
+#
+# Do NOT use this for the github.io build — that one uses _config.yml alone
+# (baseurl blank), so the two sites never conflict.
+url: https://ai.stanford.edu
+baseurl: /~nntruong

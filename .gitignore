@@ -13,3 +13,5 @@ assets/rendercv/rendercv_output/*.typ
 Gemfile.lock
 node_modules/
 vendor
+# Scratch dir used by deploy.sh on skampere1
+_site_deployed
