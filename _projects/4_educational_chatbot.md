@@ -4,6 +4,7 @@ title: Educational Chatbot
 description: NLP-powered conversational system for school information, integrated with Facebook Messenger.
 importance: 4
 category: software
+selected: true
 ---
 
 As Team Leader and Lead Technical Writer, I built an intelligent conversational system for the VNU-HCM High School for the Gifted to reduce the burden on the counseling team and streamline information access.

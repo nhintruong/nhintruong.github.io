@@ -4,6 +4,7 @@ title: animint2 (GSoC)
 description: Migrating the animint2 R package from PhantomJS to Chrome for Google Summer of Code.
 importance: 3
 category: software
+selected: true
 ---
 
 As a **Google Summer of Code 2024** contributor for [The R Project for Statistical Computing](https://www.r-project.org/), I modernized the `animint2` R package's testing and screenshot infrastructure.
