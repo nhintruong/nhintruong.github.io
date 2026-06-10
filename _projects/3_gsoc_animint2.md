@@ -5,6 +5,7 @@ description: Migrating the animint2 R package from PhantomJS to Chrome for Googl
 importance: 3
 category: software
 selected: true
+github: https://github.com/nhintruong/animint2
 ---
 
 As a **Google Summer of Code 2024** contributor for [The R Project for Statistical Computing](https://www.r-project.org/), I modernized the `animint2` R package's testing and screenshot infrastructure.
