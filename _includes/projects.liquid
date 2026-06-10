@@ -15,7 +15,7 @@
         <h2 class="card-title">{{ project.title }}</h2>
         <p class="card-text">{{ project.description }}</p>
         {% if project.github %}
-          <p class="card-text">Code could be found <a href="{{ project.github }}" target="_blank" rel="noopener noreferrer">here</a></p>
+          <a href="{{ project.github }}" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">Code</a>
         {% endif %}
       </div>
     </div>
