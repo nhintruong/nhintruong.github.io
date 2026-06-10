@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://ai.stanford.edu/~nntruong/sitemap.xml
